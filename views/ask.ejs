@@ -1,0 +1,18 @@
+<%- include('partials/head') %>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<title>Ask</title>
+<body>
+    <div class="container">
+        <h1 id="h1_question">Faça sua pergunta</h1>
+        <hr>
+        <form>
+            <label for="title">Title</label>
+            <input class="form-control" type="text" placeholder="Title" required autofocus>
+            <label for="description">Description</label>
+            <textarea class="form-control" name="description" id="description" required placeholder="Describe your question"></textarea>
+            <button class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+<%- include('partials/bootstrapScript') %>
