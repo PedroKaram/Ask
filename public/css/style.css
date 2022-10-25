@@ -1,7 +1,19 @@
-/* '/ask' style */
+/* ask */
 
-#h1_question {
+#askCard {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.201);
+    margin-top: 6vh;
+}
+
+#askCard h1 {
     text-align: center;
 }
 
-/* '/' style*/
+#askCard button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+#askCard label[for="description"] {
+    margin: 10px 0;
+}

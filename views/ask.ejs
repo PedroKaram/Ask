@@ -3,16 +3,24 @@
 </head>
 <title>Ask</title>
 <body>
+    <nav class="navbar">
+        <a class="navbar-brand btn btn-primary" href="/" id="askNavButton">Home</a>
+      </nav>
     <div class="container">
-        <h1 id="h1_question">Faça sua pergunta</h1>
-        <hr>
-        <form>
-            <label for="title">Title</label>
-            <input class="form-control" type="text" placeholder="Title" required autofocus>
-            <label for="description">Description</label>
-            <textarea class="form-control" name="description" id="description" required placeholder="Describe your question"></textarea>
-            <button class="btn btn-primary">Submit</button>
-        </form>
+        <div class="card" id="askCard">
+            <div class="card-header">
+                <h1>Ask your question</h1>
+            </div>
+            <div class="card-body">
+                <form>
+                    <label for="title">Title</label>
+                    <input class="form-control" type="text" placeholder="Question title" required autofocus>
+                    <label for="description">Description</label>
+                    <textarea class="form-control" name="description" id="description" required placeholder="Describe your question"></textarea>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 <%- include('partials/bootstrapScript') %>
